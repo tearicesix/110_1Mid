@@ -10,7 +10,17 @@ namespace _110_1Mid {
         protected void Page_Load(object sender, EventArgs e) {
 
         }
-
+        
+        protected void btn_Submit_Click(object sender, EventArgs e)
+        {
+            String temp = " ";
+            temp += lb_Id.Text + "<br/>";
+            temp += ddl_Type.Text + "<br/>";
+            temp += ddl_ZoneCode.Text + tb_Number.Text + "<br/>";
+            temp += ddl_City.Text + tb_Add.Text + "<br/>";
+            temp += tb_Des.Text + "<br/>";
+            lb_Msg.Text = temp;
+        }
         // To generate a 4 digital number
         public string mt_GenVeriStr() {
             string s_Res = "";
